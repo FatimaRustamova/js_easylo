@@ -1,0 +1,181 @@
+@import "variables";
+@import "mixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 32px;
+}
+
+nav{
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    .navbar{
+        @include flex;
+        img{
+            cursor: pointer;
+        }
+        ul{
+            display: flex;
+            gap: 40px;
+            li{
+                list-style-type: none;
+                font-family: $font-family1;
+                font-size: 16px;
+                a{
+                    text-decoration: none;
+                    color: $color1;
+                }
+            }
+            button{
+                width: 150px;
+                height: 40px;
+                background-color: $color2;
+                cursor: pointer;
+                color: $color1;
+                font-family: $font-family1;
+                font-size: 16px;
+                border: 1px solid $color2;
+            }
+        }
+    }
+}
+
+.section1{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba($color2, 0.4),rgba($color2, 0.4)) ,url("../images/h1_hero1.jpg.webp");
+    .simple{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .final{
+            width: 42%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 200px;
+            margin-right: 50px;
+            h1{
+                font-family: $font-family1;
+                font-size: 55px;
+                color: $color1;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 110px;
+                    bottom: -10px;
+                    height: 3px;
+                    left: 0;
+                    background: $color1;
+                }
+            }
+            p{
+                font-family: $font-family1;
+                font-size: 23px;
+                color: $color1;
+            }
+            button{
+                width: 200px;
+                height: 60px;
+                font-family: $font-family2;
+                font-size: 15px;
+                color: $color1;
+                background: none;
+                border: 3px solid $color1;
+                transition: all .5s ease;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover{
+                    background: $color2;
+                    cursor: pointer;
+                    border-color: $color2;
+                }
+            }
+        }
+        .how{
+            width: 40%;
+            margin-top: 200px;
+            background-color: $color1;
+            padding: 50px 40px; 
+            @include center;
+            flex-direction: column;
+            gap: 10px;
+            h2{
+                font-family: $font-family1;
+                font-size: 25px;
+                color: $color3;
+            }
+            #p1{
+                font-family: $font-family2;
+                color: $color4;
+                font-size: 14px;
+                font-weight: 600;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 110px;
+                    bottom: -15px;
+                    height: 3px;
+                    left: 60px;
+                    background: $color2;
+                }
+            }
+            #p2{
+                font-family: $font-family2;
+                color: $color4;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            form{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 25px;
+                label{
+                    font-family: $font-family2;
+                    color: $color4;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    span{
+                        color: $color2;
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                }
+                select{
+                    width: 100%;
+                    height: 45px;
+                    border: 1px solid rgba($color: $color4, $alpha: 0.4);
+                    cursor: pointer;
+                    padding-left: 15px;
+                    font-family: $font-family1;
+                }
+                button{
+                    width: 100%;
+                    height: 50px;
+                    background-color: $color2;
+                    border: 1px solid $color2;
+                    color: $color1;
+                    font-family: $font-family1;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navbar img {
+  cursor: pointer;
+}
+nav .navbar ul {
+  display: flex;
+  gap: 40px;
+}
+nav .navbar ul li {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+nav .navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav .navbar ul button {
+  width: 150px;
+  height: 40px;
+  background-color: seagreen;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: 1px solid seagreen;
+}
+
+.section1 {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(46, 139, 87, 0.4), rgba(46, 139, 87, 0.4)), url("../images/h1_hero1.jpg.webp");
+}
+.section1 .simple {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section1 .simple .final {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 200px;
+  margin-right: 50px;
+}
+.section1 .simple .final h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 55px;
+  color: white;
+  position: relative;
+}
+.section1 .simple .final h1::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  background: white;
+}
+.section1 .simple .final p {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  color: white;
+}
+.section1 .simple .final button {
+  width: 200px;
+  height: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: white;
+  background: none;
+  border: 3px solid white;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.section1 .simple .final button:hover {
+  background: seagreen;
+  cursor: pointer;
+  border-color: seagreen;
+}
+.section1 .simple .how {
+  width: 40%;
+  margin-top: 200px;
+  background-color: white;
+  padding: 50px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.section1 .simple .how h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #0F4332;
+}
+.section1 .simple .how #p1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: dimgrey;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+.section1 .simple .how #p1::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  bottom: -15px;
+  height: 3px;
+  left: 60px;
+  background: seagreen;
+}
+.section1 .simple .how #p2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: dimgrey;
+  font-size: 16px;
+  font-weight: 600;
+}
+.section1 .simple .how form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+.section1 .simple .how form label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: dimgrey;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section1 .simple .how form label span {
+  color: seagreen;
+  font-size: 17px;
+  font-weight: bold;
+}
+.section1 .simple .how form select {
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgba(105, 105, 105, 0.4);
+  cursor: pointer;
+  padding-left: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.section1 .simple .how form button {
+  width: 100%;
+  height: 50px;
+  background-color: seagreen;
+  border: 1px solid seagreen;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
